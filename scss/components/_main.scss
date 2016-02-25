@@ -1,24 +1,5 @@
-.fade-in {
-    opacity: 0;
-    -webkit-animation: fadeIn ease-in 1;
-    -moz-animation: fadeIn easi-in 1;
-    animation: fadeIn ease-in 1
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode:forwards;
-    animation-fill-mode:forwards;
-    -webkit-animation-duration:1s;
-    -moz-animation-duration:1s;
-    animation-duration:1s; 
-}
-
-.fade-in {
-    -webkit-animation-delay: 0.7s;
-    -moz-animation-delay: 0.7s;
-    animation-delay: 0.7s; 
-}
-
 body {
-    background: $secondary;
+    background-color:$secondary;
     background-size: 100%;
     font-family: $mainfont;
     font-size: 16px;
@@ -53,15 +34,12 @@ a.dfn-hover {
 	text-decoration: none;
 }
 
-/** Code for hover info **/
-
 dfn {
     border-bottom: solid 2.5px $primary;
     padding: 0 0.4em;
     cursor: help;
     font-style: normal;
     position: relative;
-  
 }
 
 dfn::after {
@@ -113,7 +91,9 @@ dfn:hover::before {
 }
 
 .the-link {
-    @include button;
+    color: $primary;
+    font-weight: 400;
+    text-decoration: none;
 }
 
 .box {

@@ -1,125 +1,103 @@
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } } 
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } } 
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-
-.fade-in {
-    opacity: 0;
-    -webkit-animation: fadeIn ease-in 1;
-    -moz-animation: fadeIn easi-in 1;
-    animation: fadeIn ease-in 1
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode:forwards;
-    animation-fill-mode:forwards;
-    -webkit-animation-duration:1s;
-    -moz-animation-duration:1s;
-    animation-duration:1s; 
-}
-
-.fade-in {
-    -webkit-animation-delay: 0.7s;
-    -moz-animation-delay: 0.7s;
-    animation-delay: 0.7s; 
-
-}
-
 body {
-    background: #F0FFFF;
-    background-size: 100%;
-    font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-    font-size: 16px;
-    line-height: 1.5em;
-    margin: 80px 4em 0;
-    color: #2F4F4F;
+  background-color: #F0FFFF;
+  background-size: 100%;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  margin: 80px 4em 0;
+  color: #2F4F4F;
 }
 
 h1 {
-    max-width: 49rem;
-    font-size: 3em;
-    line-height: 1em;
-    font-weight: 700;
-    margin: 0.25em auto;
+  max-width: 49rem;
+  font-size: 3em;
+  line-height: 1em;
+  font-weight: 700;
+  margin: 0.25em auto;
 }
 
 h2 {
-    max-width: 49rem;
-    margin: 1.4em auto;
+  max-width: 49rem;
+  margin: 1.4em auto;
 }
 
 p {
-    line-height: 1.5em;
-    margin: 1em;
-    max-width: 49rem;
-    font-size: 1em;
-    font-weight: 300; 
+  line-height: 1.5em;
+  margin: 1em;
+  max-width: 49rem;
+  font-size: 1em;
+  font-weight: 300;
 }
 
 a.dfn-hover {
-	color: #2F4F4F;
-	text-decoration: none;
+  color: #2F4F4F;
+  text-decoration: none;
 }
 
-/** Code for hover info **/
-
 dfn {
-    border-bottom: solid 2.5px #2F4F4F;
-    padding: 0 0.4em;
-    cursor: help;
-    font-style: normal;
-    position: relative;
-  
+  border-bottom: solid 2.5px #2F4F4F;
+  padding: 0 0.4em;
+  cursor: help;
+  font-style: normal;
+  position: relative;
 }
 
 dfn::after {
-    content: attr(data-info);
-    display: inline;
-    position: absolute;
-    top: 22px; left: 0;
-    opacity: 0;
-    width: 230px;
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 1.5em;
-    padding: 0.5em 0.8em;
-    background: #2F4F4F;
-    color: #F0FFFF;
-    pointer-events: none; /* This prevents the box from apearing when hovered. */
-    transition: opacity 250ms, top 250ms;
-    
+  content: attr(data-info);
+  display: inline;
+  position: absolute;
+  top: 22px;
+  left: 0;
+  opacity: 0;
+  width: 230px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5em;
+  padding: 0.5em 0.8em;
+  background: #2F4F4F;
+  color: #F0FFFF;
+  pointer-events: none;
+  transition: opacity 250ms, top 250ms;
 }
 
 dfn::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 12px; left: 20px;
-    opacity: 0;
-    width: 0; height: 0;
-    border: solid transparent 5px;
-    border-bottom-color: #2F4F4F;
-    transition: opacity 250ms, top 250ms;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  border: solid transparent 5px;
+  border-bottom-color: #2F4F4F;
+  transition: opacity 250ms, top 250ms;
 }
 
 dfn:hover {
-    z-index: 2;
-    border-bottom: solid 2.5px #F0FFFF;
-} 
+  z-index: 2;
+  border-bottom: solid 2.5px #F0FFFF;
+}
+
 dfn:hover::after,
 dfn:hover::before {
-    opacity: 1;
+  opacity: 1;
 }
+
 dfn:hover::after {
-    top: 30px;
+  top: 30px;
 }
+
 dfn:hover::before {
-    top: 20px;
+  top: 20px;
 }
 
 .the-link {
-    color: #2F4F4F;
-    font-weight: 400;
-    text-decoration: none;animation-delay: 
+  color: #2F4F4F;
+  font-weight: 400;
+  text-decoration: none;
 }
 
 .box {
-    border: solid 2px #2F4F4F;
+  border: solid 2px #2F4F4F;
 }
